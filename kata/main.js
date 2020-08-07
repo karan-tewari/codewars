@@ -1,15 +1,15 @@
-// https://www.codewars.com/kata/54c27a33fb7da0db0100040e
+// https://www.codewars.com/kata/5667e8f4e3f572a8f2000039
 
-var isSquare = function(n){
-    if(n < 0){
-      return false
-    }
-    else if(Math.sqrt(n) % 1 === 0){
-          return true
-      }
-      else{
-          return false
-      }
-  }  
+function accum(s) {
+    let splitted = s.split("")
+    let output = "";
+    splitted.map((x,i) => {
+        let my = (x.toUpperCase() + x.repeat(i) + "-");
+        console.log(my);
+    })
+    console.log(output)
+}
 
-  isSquare(25)
+accum("abcd");
+
+// "A-Bb-Ccc-Dddd"
